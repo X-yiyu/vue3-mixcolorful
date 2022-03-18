@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Test from "@/components/Test.vue";
+// import Test from "@/components/Test.vue";
 const routerHistory = createWebHistory();
 // createWebHashHistory hash 路由
 // createWebHistory history 路由
@@ -9,7 +9,7 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: Test
+      component: import("@/components/Test.vue")
     }
   ]
 });
